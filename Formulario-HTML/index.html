@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Fomulario de cadastro</h1>
+        <p>Complete as suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label for="primeironome">Primeiro nome</label>
+                <input type="text" name="primeironome" id="primeironome">
+            </div>
+
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="email">Seu melhor e-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="sexualidade">Escolha seu sexo</label>
+            <label>
+                <input type="radio" name="sexualidade" value="masculino" checked>Masculino
+            </label>
+
+            <label>
+                <input type="radio" name="sexualidade" value="feminino">Feninino
+            </label>
+
+            <label>
+                <input type="radio" name="sexualidade" value="outro">Outro
+            </label>
+
+            <label>
+                <input type="radio" name="sexualidade" value="none">Prefiro não dizer
+            </label>
+        </div>
+
+        <div>
+            <label for="">Estado</label>
+            <select id="Estado">
+                <option>São Paulo</option>
+                <option>Santa Catarina</option>
+                <option>Curitiba</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
