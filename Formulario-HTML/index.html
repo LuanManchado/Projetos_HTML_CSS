@@ -24,6 +24,11 @@
                 <label for="sobrenome">Sobrenome</label>
                 <input type="text" name="sobrenome" id="sobrenome">
             </div>
+
+            <div>
+                <label for="telefone">Celular</label>
+                <input type="tel" name="telefone" id="telefone">
+            </div>
         </fieldset>
 
         <div>
@@ -51,15 +56,22 @@
         </div>
 
         <div>
-            <label for="">Estado</label>
-            <select id="Estado">
-                <option>São Paulo</option>
-                <option>Santa Catarina</option>
-                <option>Curitiba</option>
-                <option>Rio de Janeiro</option>
-                <option>Minas Gerais</option>
+            <label for="">Senioridade</label>
+            <select id="Qual area atue?">
+                <option selected disable value="">Selecione uma opção</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
             </select>
         </div>
+
+        <div>
+            <label for="textexperiencia">Conte um pouco da sua experiencia</label>
+            <textarea name="textexperiencia" id="textexperiencia" style="width: 26em;" rows="6"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+
     </form>
 </body>
 </html>
