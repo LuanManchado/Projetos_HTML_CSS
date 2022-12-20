@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    background: #35363A;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(55, 71, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .navbar ul {
+    list-style: none;
+
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background: #35363A;
+    color: #fff;
+    border-radius: 0px 10px;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    background: rgb(55, 71, 255);
+    display: none;
+    border-radius: 12px;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+}
+
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+.text-name {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: none;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.2px solid #FFF2E7;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo {
+    font-weight: 400;
+    font-size: 64px;
+    font-family: 'Righteous', cursive;
+    padding-top: 120px;
+}
+
+.sub-titulo {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Arial';
+}
+
+.botao {
+    position: absolute;
+    background: rgb(55, 71, 255);
+    height: 45px;
+    width: 150px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+
+}
+
+.botao:hover {
+    background: rgb(107, 134, 243);
+}
+
+
+.conteudo-principal-segundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 24px;
+    margin-bottom: 70px;
+}
+
+.titulo-segundario {
+    font-size: 32px;
+    border-top: 0.2px solid #FFF2E7;
+    padding-top: 48px;
+}
+
+.paragrafo-segundario {
+    font-size: 14px;
+}
+
+
+.rodape {
+    border-top: 0.2px solid #FFF2E7;
+}
+
+.rodape-img {
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.conteudo-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.img-principal-projetos {
+    margin-top: 70px;
+    border-radius: 23px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+.text-projetos {
+    margin-top: 70px;
+}
+
+.conteudo-escrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.link-ds {
+    color: white;
+    text-decoration: underline;
+}
+
+.botao-entrar {
+    background: rgb(55, 71, 255);
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-entrar:hover {
+    background: #35363A;
+    border-radius: 0px 10px;
+}
+
+.botao-registro {
+    background: rgb(55, 71, 255);
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-registro:hover {
+    background: #35363A;
+    border-radius: 0px 10px;
+}
+
+.botoes-registro {
+    align-items: center;
+    display: flex;
+    gap: 42px;
+}
+
+
+@media (max-width:991px) {
+
+    #btn-mobile{
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .botoes-registro {
+        display: none;
+    }
+    .text-name{
+        display: block;
+    }
+    .navbar.active .navbar{
+        display: flex;
+    }
+}
