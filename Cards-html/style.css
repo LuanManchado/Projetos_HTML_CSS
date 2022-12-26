@@ -1,0 +1,50 @@
+body{
+  font-family: sans-serif;
+  background-color: #0080FF;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  width: 400px
+  transition: all 0.3s ease-out;
+  background-color: white;
+  
+  
+}
+.card:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+  transition: all 0.9s;
+  transform-origin: button;
+}
+
+.card p{
+  color: #a3a5ae;
+}
+
+.image {
+  float: right;
+  width: 48px;
+  height: 48px;
+}
+
+.blue {
+  border-left: 3px solid #00FF04;
+}
+ 
+.green {
+  border-left: 3px solid #A2A2A2;
+}
+ 
+.red {
+  border-left: 3px solid #FF0000;
+}
