@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif
+}
+
+body{
+  background-color: black;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50;
+  color: white;
+}
+header p{
+  color: #0075FF;
+}
+.logo{
+  border-radius:50%;
+  width: 133px;
+  height: 132px;
+}
+.logo:hover{
+  border: 4px solid #0075FF;
+  transition: 0.3s ease;
+}
+.sobre-mim{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50;
+  padding: 0px 150px;
+  color: white;
+}
+
+.sobre-mim p {
+  margin-top: 50px;
+}
+
+.redes-sociais{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50;
+  padding: 0px 150px;
+  color: white;
+}
+#insta{
+  width: 305px;
+  height: 100px;
+  background: linear-gradient(0deg, rgba(255, 0, 153, 0.42), rgba(255, 0, 153, 0.42)), #0075FF;
+  border-radius: 10px;
+  font-size: 24;
+  color: #FFFFFF;
+}
+#linkedin{
+  width: 305px;
+  height: 100px;
+  background: #0075FF;
+  border-radius: 10px;
+  font-size: 24;
+  color: #FFFFFF;
+}
+
+#discord{
+  width: 305px;
+  height: 100px;
+  background: #2F2F2F;
+  border-radius: 10px;
+  font-size: 24;
+  color: #FFFFFF;
+}
+
+#github{
+  width: 305px;
+  height: 100px;
+  background: #448585;
+  border-radius: 10px;
+  font-size: 24;
+  color: #FFFFFF;
+}
+.pessoal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50;
+  padding: 0px 150px;
+  color: white;
+}
+
+#setup{
+  width: 305px;
+  height: 100px;
+  background: red;
+  border-radius: 10px;
+  font-size: 24;
+  color: #FFFFFF;
+}
